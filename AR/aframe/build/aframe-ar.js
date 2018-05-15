@@ -8288,9 +8288,10 @@ AFRAME.registerComponent('arjs-anchor', {
 				markerParameters.barcodeValue = 1001
 				markerParameters.markersAreaEnabled = true
 			}else if( _this.data.preset === 'custom' ){
+				Console.log("on passe dans le custom")
 				arProfile.defaultMarkerParameters.type = 'pattern'
  				arProfile.defaultMarkerParameters.patternUrl = _this.data.patternUrl;
-				 arProfile.defaultMarkerParameters.markersAreaEnabled = false
+				arProfile.defaultMarkerParameters.markersAreaEnabled = false
 			}else if( _this.data.type === 'barcode' ){
 				markerParameters = {
 					type:               _this.data.type,
